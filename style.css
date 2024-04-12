@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #000428;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #004e92, #000428);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #004e92, #000428);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+section {
+    margin: auto;
+    background: #fff;
+    padding: 15px;
+    width: 800px;
+    border-radius: 10px;
+    box-shadow: 6px 6px 10px 3px rgba(0, 0, 0, 0.75);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    margin-top: 50px;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+.form {
+    display: flex;
+    padding: 10px;
+}
+
+.form input[type="text"],
+[type="number"] {
+    margin-right: 60px;
+    width: 200px;
+    padding: 8px;
+    outline: none;
+    border: 1px solid grey;
+    border-radius: 5px;
+    transition: background 1s ease;
+}
+
+.form input[type="text"]:hover,
+[type="number"]:hover {
+    background: rgb(238, 236, 236);
+}
+
+.form p {
+    font-weight: bold;
+}
+
+.btn {
+    margin: 10px 0px 20px 10px;
+    position: relative;
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    background: #000428;
+    background: -webkit-linear-gradient(to right, #004e92, #000428);
+    background: linear-gradient(to right, #004e92, #000428);
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+    bottom: 0px;
+    transition: bottom .2s ease;
+
+}
+
+.btn:hover {
+    bottom: 5px;
+}
+
+#funcionarios {
+    border-collapse: collapse;
+    position: relative;
+    width: 100%;
+}
+
+#funcionarios td,
+#funcionarios th {
+    font-weight: bold;
+    padding: 4px;
+}
+
+#funcionarios tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#funcionarios th:last-child {
+    text-align: center;
+}
+
+#funcionarios th {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: left;
+    background: #004e92;
+    color: white;
+}
+
+.funcMenu {
+    text-align: center;
+}
+
+.funcMenu i {
+    cursor: pointer;
+    padding: 5px;
+}
+
+.funcMenu #del:hover {
+    color: rgb(209, 1, 1);
+}
+
+.funcMenu #edit:hover {
+    color: rgb(2, 160, 2);
+}
+
+@media (max-width: 850px) {
+    .funcMenu {
+        text-align: center;
+    }
+
+    .funcMenu i {
+        width: 45%;
+        border-radius: 25px;
+        padding: 5px;
+        box-shadow: 1px 1px 5px black;
+        transition: background 0.3s ease;
+    }
+
+    .funcMenu #del {
+        background: rgb(209, 1, 1);
+    }
+
+    .funcMenu #edit {
+        background: rgb(2, 160, 2);
+    }
+
+    .funcMenu #del:hover {
+        color: black;
+        background: rgb(255, 0, 0);
+    }
+    
+    .funcMenu #edit:hover {
+        color: black;
+        background: rgb(4, 202, 4);
+    }
+
+    .form {
+        display: block;
+    }
+
+    .form input[type="text"],
+    [type="number"] {
+        margin-bottom: 10px;
+    }
+
+    .form input[type="text"],
+    [type="number"]:last-child {
+        margin-bottom: none;
+    }
+
+    section {
+        width: 400px;
+    }
+
+    table tbody tr td {
+        display: block;
+        text-align: right;
+    }
+
+    table tbody tr td:before {
+        content: attr(data-tittle);
+        position: absolute;
+        left: 10px;
+        display: block;
+    }
+
+    table th {
+        display: none;
+    }
+
+    table tbody tr {
+        margin-bottom: 10px;
+        display: block;
+        border: 1px solid #dad6eb;
+    }
+}
