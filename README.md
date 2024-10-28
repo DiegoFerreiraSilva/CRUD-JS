@@ -1,1 +1,1 @@
-CRUD básico com armazenamento local
+Sistema básico de CRUD(Create, Read, Update, Delete) com armazenamento local utilizando JSON.
